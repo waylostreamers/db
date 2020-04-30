@@ -1,5 +1,37 @@
 # db
 
+'''
+DDEX metadata format 
+• <TerritoryCode> ISO territory code plus a DDEX code
+ for “Worldwide”;
+• <Title> - A composite element for title of the sound recording.
+	 	 DDEX allows for many different kinds of titles. This element takes
+ an attribute to identify the type of title being provided, i.e.
+ “FormalTitle,” “DisplayTitle,” or “AbbreviatedDisplayTitle”;
+• <DisplayArtist> - A composite element used to specify the artist
+ associated with each sound recording. It includes elements to
+	 	 specify an artist’s name as well as an optional <ArtistRole> element;
+• <ResourceContributor> - DDEX includes the concept of a
+	 	 contributor. This field can be used to list contributing artists such
+ as guest rappers, soloists, etc;
+• <LabelName> - An element for the label name;
+• <PLine> - A composite element that identifies the year of first
+ release of the Resource or Release followed by the name of the
+ entity that owns the phonographic rights in the Resource or
+ Release;
+• <Genre> - A composite element used to specify genre
+ information;
+• <ParentalWarningType> - The element used to identify whether
+	 	 the file includes explicit content or not;
+• <TechnicalSoundRecordingDetails> - A composite element that
+	 	 includes all the technical details about an audio file, such as the
+ codec, bit rate, number of channels, etc. This element also contains
+	 	 the file name and hash sum of the file; and
+• <IsPreview> - Indication of whether the Resource is a preview
+	 	 of an associated full Resource. <Video>.
+
+'''
+
 Database files for WAYLOSTREAMS 
 
 ARTISTS : this is just the string associated with an album it is not a person : 
